@@ -1,0 +1,3 @@
+{
+  "extends": "@plex/stylelint-config"
+}

@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "extends": ["@plex/eslint-config", "plugin:@next/next/recommended"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "next": {
+      "rootDir": ["../watch", "../www"]
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "import/no-extraneous-dependencies": "error"
+      }
+    }
+  ]
+}

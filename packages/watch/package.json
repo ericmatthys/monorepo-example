@@ -1,0 +1,34 @@
+{
+  "name": "watch",
+  "version": "0.0.0",
+  "private": true,
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 6 Safari versions"
+  ],
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "dev-debug": "NODE_OPTIONS='--inspect' next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "lint": "eslint . --ext .js,.json,.ts,.tsx --max-warnings 0",
+    "format": "yarn lint --fix",
+    "tsc": "tsc -b"
+  },
+  "dependencies": {
+    "core": "*",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sharp": "0.30.1"
+  },
+  "devDependencies": {
+    "@plex/eslint-config": "*",
+    "@types/node": "14.14.31",
+    "@types/react": "17.0.39",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.6.2"
+  }
+}

@@ -1,0 +1,7 @@
+# node_modules ignored by default
+
+# Artifacts
+.next
+.tsoutput
+.turbo
+.vercel

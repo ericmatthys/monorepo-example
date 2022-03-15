@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  "globalDependencies": [".env*.local"],
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["$NEXT_PUBLIC_VERCEL_ENV", "$NODE_ENV", "$VERCEL_ENV"],
+      "outputs": [".next/**"]
+    },
+    "start": {
+      "cache": false
+    },
+    "lint": {
+      "outputs": []
+    },
+    "format": {
+      "cache": false
+    },
+    "test": {
+      "outputs": []
+    },
+    "tsc": {
+      "dependsOn": ["^tsc"],
+      "outputs": [".tsoutput/**"]
+    }
+  }
+}

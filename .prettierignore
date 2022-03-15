@@ -1,0 +1,17 @@
+# node_modules ignored by default
+
+# VSCode Prettier does not have a "workingDirectories" setting like ESLint, so
+# this root .prettierignore is always used.
+
+# Artifacts
+.next
+.tsoutput
+.turbo
+.vercel
+
+# File extensions
+*.lock
+*.log
+*.snap
+*.svg
+*.txt

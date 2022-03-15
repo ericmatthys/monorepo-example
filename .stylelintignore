@@ -1,0 +1,10 @@
+# node_modules ignored by default
+
+# VSCode Stylelint does not have a "workingDirectories" setting like ESLint, so
+# this root .stylelintignore is always used.
+
+# Artifacts
+.next
+.tsoutput
+.turbo
+.vercel

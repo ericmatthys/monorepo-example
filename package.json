@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.17",
+  "prettier": "@plex/prettier-config",
+  "workspaces": [
+    "packages/*"
+  ],
+  "volta": {
+    "node": "14.17.3",
+    "yarn": "1.22.17"
+  },
+  "scripts": {
+    "dev": "cross-env FORCE_COLOR=1 turbo run dev --parallel",
+    "build": "cross-env FORCE_COLOR=1 turbo run build",
+    "start": "cross-env FORCE_COLOR=1 turbo run start --parallel",
+    "lint": "yarn eslint && yarn prettierlint && cross-env FORCE_COLOR=1 turbo run lint --continue",
+    "eslint": "eslint . --ext .js,.json,.ts,.tsx --max-warnings 0",
+    "prettierlint": "prettier \"**/*.(md|json|yml)\" --check",
+    "stylelint": "stylelint \"**/*.css\"",
+    "format": "yarn eslint --fix && yarn prettierlint --write && yarn stylelint --fix && cross-env FORCE_COLOR=1 turbo run format --continue",
+    "tsc": "cross-env FORCE_COLOR=1 turbo run tsc --continue",
+    "clean": "del-cli \"node_modules/.cache\" \"packages/*/.next\" \"packages/*/.tsoutput\" \"packages/*/.turbo\""
+  },
+  "devDependencies": {
+    "@plex/eslint-config": "*",
+    "@plex/prettier-config": "*",
+    "@plex/stylelint-config": "*",
+    "cross-env": "7.0.3",
+    "del-cli": "4.0.1",
+    "eslint": "8.11.0",
+    "prettier": "2.5.1",
+    "stylelint": "14.5.3",
+    "turbo": "1.1.5"
+  }
+}

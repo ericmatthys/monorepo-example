@@ -1,0 +1,17 @@
+{
+  "name": "@plex/prettier-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js,.json,.ts,.tsx --max-warnings 0",
+    "format": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@plex/eslint-config": "*",
+    "eslint": "8.11.0"
+  },
+  "peerDependencies": {
+    "prettier": ">= 2"
+  }
+}

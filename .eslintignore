@@ -1,0 +1,11 @@
+# node_modules ignored by default
+
+# /packages/* respect their own .eslintignore files. VSCode ESLint relies on the
+# "workingDirectories" setting to support this.
+packages
+
+# Artifacts
+.next
+.tsoutput
+.turbo
+.vercel

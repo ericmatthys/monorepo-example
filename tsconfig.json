@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/watch"
+    },
+    {
+      "path": "./packages/www"
+    }
+  ]
+}
