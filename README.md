@@ -48,7 +48,7 @@ yarn dev
   outside of packages to catch various other config files and documentation.
 - Prettier and Stylelint extensions do not have a similar setting, so from
   within VSCode they are always run from the root. To match that behavior on the
-  CLI, we do not use Turborepo to run Prettier or ESLint per package.
+  CLI, we do not use Turborepo to run Prettier or Stylelint per package.
 - There's not really a good way that I found to share public assets between
   `watch` and `www`, so you'll see the font is in both packages for example.
 - At the very least, I think the documentation for `Ignored Build Step` should
